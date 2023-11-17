@@ -1,0 +1,198 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.my-nav {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.my-nav button {
+  border-radius: 30px;
+}
+.nav a,
+.nav a:visited {
+  color: black;
+}
+.nav a:hover {
+  color: grey;
+}
+.my-nav button {
+  border: 2px solid black;
+  background-color: white;
+}
+.my-nav button:hover {
+  background-color: white;
+  border: 2px solid black;
+}
+.my-body {
+  background-color: coral;
+  display: flex;
+  justify-content: center;
+}
+.inner-body {
+  background-color: cornflowerblue;
+  width: 75%;
+}
+.inner-body h1 {
+  text-align: center;
+  font-size: 4rem;
+}
+.happy-cus{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.img-main img {
+  max-height: 300px;
+  border-radius: 30px;
+  width: auto; 
+  min-width: 100%; 
+}
+.arrowbutton{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  background-color: azure;
+  width: 6.5rem;
+  position: absolute;
+  border-radius: 0 0 0 15px;
+  top: 0;
+  right: 0.75rem;
+}
+.coloredcon{
+  border-radius: 15px;
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.arrowbutton p{
+  font-weight: 700;
+  font-size: small;
+  text-align: center;
+}
+.arrow{
+  width: 4rem;
+  height: 4rem;
+  
+}
+.companies{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-h4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.my-h4 h4{
+  font-family: monospace;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+}
+.companies div{
+  text-align: center;
+  font-family: monospace;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.why-use div:first-child h3{
+  font-weight: 700;
+}
+.why-use div:nth-child(2) p{
+  font-size: 1.1rem;
+  font-family: monospace;
+  font-weight: 600;
+}
+.why-use div:nth-child(3) p{
+  font-size: 1.1rem;
+  font-family: monospace;
+  font-weight: 600;
+}
+.why-use div:nth-child(4) button{
+  text-align: center;
+  font-family: monospace;
+  border-radius: 25px;
+}
+
+/*MEDIA QUERY*/
+@media only screen and (max-width: 426px) {
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+    order: 1;
+  }
+  .my-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .inner-body h1 {
+    font-size: 2rem;
+  }
+  .happy-cus{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+  .arrowbutton{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    background-color: azure;
+    width: 5rem;
+    position: absolute;
+    border-radius: 0 0 0 15px;
+    top: 0;
+    right: 0.1rem;
+  }
+  .coloredcon{
+    border-radius: 15px;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .arrowbutton p{
+    position: absolute;
+    top: -10000000000;
+    font-weight: 700;
+    font-size: 0;
+    text-align: center;
+  }
+  .arrow{
+    width: 3rem;
+    height:3rem;
+    
+  }
+}
